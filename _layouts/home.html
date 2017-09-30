@@ -1,0 +1,29 @@
+---
+layout: base
+---
+<div class="container">
+    <div class="row">
+        <div class="card bg-light mx-auto m-4 rounded-right">
+            <div class="card-header">
+                My Presentations
+            </div>
+            <div class="card-body">
+                <table>
+                    <tbody>
+                        {% for post in site.posts %}
+                        <tr>
+                            <th>
+                                <i class="fa fa-bookmark"></i>
+                                <a href="{{ post.url  | relative_url }}">{{post.title}}</a>
+                                <small class="text-muted">{{post.date | date_to_string}}</small>
+                            </th>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
