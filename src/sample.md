@@ -36,11 +36,13 @@ List icons
 
 ---
 
-## Image and Links
+## Images
 
-![Image](http://aldrin.co/images/samefringe.png)
+To use an image, put it `images` directory,
 
-[Source](https://github.com/aldrin/present/blob/master/slides/sample.md)
+![](../src/images/samefringe.png)
+
+and link to it as `![](../src/images/<name>)`.
 
 ---
 
@@ -48,8 +50,10 @@ List icons
 
 Blockquotes 
 
-> Ineluctable modality of the visible: at least that if no more, thought through my eyes. Signatures
-> of all things I am here to read, seaspawn and seawrack, the nearing tide, that rusty boot.
+<blockquote class="blockquote">
+Ineluctable modality of the visible: at least that if no more, thought through my eyes. Signatures
+of all things I am here to read, seaspawn and seawrack, the nearing tide, that rusty boot.
+</blockquote>
 
 Universally that person's acumen is esteemed very little perceptive concerning whatsoever matters
 are being held as most profitably by mortals with sapience endowed to be studied who is ignorant of

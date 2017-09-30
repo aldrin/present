@@ -1,0 +1,41 @@
+---
+layout: base
+---
+<div class="reveal">
+    <div class="slides">
+        {% unless page.cover %}
+        <section>
+            <h1>{{ page.title }}</h1>
+            <h2 class="text-muted">{{ page.subtitle }}</h2>
+            <div class="fixed-bottom">
+                {% if page.webex %}
+                <a href="{{page.webex}}"><i class="fa fa-play-circle"></i> WebEx Recording</a>
+                {% endif %}
+                <h4>Aldrin J D'Souza</h4>
+                <h4>{{ page.date | default: "now" | date_to_string }}</h4>
+            </div>
+        </section>
+        {% endunless %}
+        {% assign src = '/src' | append: page.id | append: '.md' | relative_url %}
+        <section data-markdown={{src}}>
+        </section>
+    </div>
+</div>
+<script src="{{site.baseurl}}{% link assets/lib/js/head.min.js %}"></script>
+<script src="{{site.baseurl}}{% link assets/js/reveal.js %}"></script>
+<script>
+ Reveal.initialize({
+     history: true,
+     center: false,
+     width: 960,
+     height: 800,
+     controls: false,
+     dependencies: [
+         { src: '{{site.baseurl}}{% link assets/plugin/markdown/marked.js %}' },
+         { src: '{{site.baseurl}}{% link assets/plugin/markdown/markdown.js %}' },
+         { src: '{{site.baseurl}}{% link assets/plugin/notes/notes.js %}', async: true },
+         { src: '{{site.baseurl}}{% link assets/plugin/highlight/highlight.js %}',
+           async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+     ]
+ });
+</script>

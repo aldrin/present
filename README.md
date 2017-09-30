@@ -1,1 +1,1 @@
-Presentation template - http://aldrin.co/present/sample/
+My presentation template using [reveal.js](https://reveal.js).
