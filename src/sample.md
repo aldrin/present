@@ -1,6 +1,6 @@
 ## Code
 
-Here <i style="color:#fee" class="fa fa-hand-o-down"></i> is some code.
+Here <i style="color:#fee" class="far fa-hand-point-down"></i> is some code.
 
 ```rust
 // Copyright 2017 Aldrin J D'Souza.
@@ -28,10 +28,10 @@ fn main() {
 Straight HTML works.
 
 <ul class="fa-ul">
-<li><i class="fa-li fa fa-hand-o-right"></i>
+<li><i class="far fa-hand-point-right"></i>
 List icons
 </li>
-<li><i class="fa-li fa fa-hand-o-right"></i>can be used</li>
+<li><i class="far fa-hand-point-right"></i> can be used</li>
 </ul>
 
 ---
