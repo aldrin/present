@@ -7,6 +7,9 @@ layout: base
         <section>
             <h1>{{ page.title }}</h1>
             <h2 class="text-muted">{{ page.subtitle }}</h2>
+            {% if page.splash %}
+            {{ page.splash }}
+            {% endif %}
             <div class="fixed-bottom">
                 {% if page.webex %}
                 <a href="{{page.webex}}"><i class="fa fa-play-circle"></i> WebEx Recording</a>
@@ -26,7 +29,7 @@ layout: base
 <script>
  Reveal.initialize({
      history: true,
-     center: false,
+     center: {% if page.center %} true {% else %} false {% endif %},
      width: 960,
      height: 800,
      controls: true,
